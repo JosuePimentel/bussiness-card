@@ -14,7 +14,10 @@ type button = { text: string, link: string }
     LogoComponent,
     ButtonComponent,
     FooterComponent
-],
+  ],
+  host: {
+    'class': 'flex w-screen justify-center bg-[#000]'
+  },
   templateUrl: './home.component.html',
 })
 export class HomeComponent {
@@ -29,7 +32,7 @@ export class HomeComponent {
     },
     {
       text: 'whatsapp',
-      link: ''
+      link: 'https://api.whatsapp.com/send?phone=5562981721535&text=Ol%C3%A1,%20Vim%20pelo%20seu%20card!'
     }
   ]
 }
