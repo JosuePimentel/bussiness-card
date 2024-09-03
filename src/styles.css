@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply m-0 p-0 appearance-none box-border font-default font-normal select-none text-primary;
+    outline: none;
+    border: none;
+  }
+}
+
+@layer utilities {
+  .font-title {
+    @apply font-Amatic font-bold;
+  }
+}

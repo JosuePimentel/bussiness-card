@@ -1,0 +1,26 @@
+<app-container-base>
+  <main class="flex flex-col w-full min-h-dvh items-center pt-[50px] z-10 relative" container>
+    <app-logo/>
+
+    <h1 class="font-title text-5xl mt-9">
+      Ester Pimentel Ajala
+    </h1>
+
+    <p class="text-base mt-3 mb-9">
+      Vestido para noivas, 15 anos, daminhas, ...
+    </p>
+
+    <div class="flex flex-col gap-[30px]">
+      @for (button of buttons; track $index) {
+        <app-button
+          [text]="button.text"
+          [link]="button.link"
+        />
+      }
+    </div>
+
+    <p class="text-base mt-2">Venda e aluguel de vestidos</p>
+
+    <app-footer/>
+  </main>
+</app-container-base>
